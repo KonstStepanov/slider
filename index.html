@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Slider</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/scripts.js" defer></script>
+  </head>
+  <body class="body">
+    <section class="slider">
+      <div class="slider__container">
+        <article class="slider__container-article">
+          <div class="slider__container-article_container">
+            <h3 class="slider__container-article_title">COMPLETED PROJECTS</h3>
+            <div class="slider__container-article_line"></div>
+          </div>
+          <p class="slider__container-article_text">
+            Only a small part of the work performed by our company is presented
+            on the site. For 14 years on in the construction market we have made
+            happy more than 1000 families
+          </p>
+          <div class="slider__container-article_chars-container">
+            <div class="slider__container-article-chars_container-item">
+              <h1>CITY:</h1>
+              <p class="slider__container-article-chars_container-text city">
+                Rostov-on-Don LCD admiral
+              </p>
+            </div>
+            <div class="slider__container-article-chars_container-item">
+              <h1>APARTMENT AREA:</h1>
+              <p
+                class="slider__container-article-chars_container-text repair-type"
+              >
+                81 m2
+              </p>
+            </div>
+            <div class="slider__container-article-chars_container-item">
+              <h1>REPAIR TIME:</h1>
+              <p
+                class="slider__container-article-chars_container-text apartment-area"
+              >
+                3.5 months
+              </p>
+            </div>
+            <div class="slider__container-article-chars_container-item">
+              <h1>REPAIR COST:</h1>
+              <p class="slider__container-article-chars_container-text">
+                Upon request
+              </p>
+            </div>
+          </div>
+          <nav aria-label="Slider menu" class="slider__container_nav-controls">
+            <button id="prev" onclick="prevSlide()" class="slider__container_nav-controls_arrow">
+              <img src="./images/arrow.svg" alt="←"  />
+            </button>
+            <div class="slider__container_nav-controls_dots">
+              <button class="slider__container_nav-controls_dots_item active" onclick="showSlide(0)"></button>
+              <button class="slider__container_nav-controls_dots_item" onclick="showSlide(1)"></button>
+              <button class="slider__container_nav-controls_dots_item" onclick="showSlide(2)"></button>
+            </div>
+            <button id="next" onclick="nextSlide()" class="slider__container_nav-controls_arrow">
+              <img src="./images/arrow.svg" alt="→" class="arrow-rotate" />
+            </button>
+          </nav>
+        </article>
+        <div class="slider__container_photo-container">
+          <nav aria-label="Slider menu" class="slider__container_photo-container_descriptions">
+            <button class="slider__container_photo-container_description active" onclick="showSlide(0)"
+              >ROSTOV-ON-DON, ADMIRAL</button
+            >
+            <button class="slider__container_photo-container_description" onclick="showSlide(1)"
+              >SOCHI THIEVES</button
+            >
+            <button class="slider__container_photo-container_description" onclick="showSlide(2)"
+              >ROSTOV-ON-DON PATRIOTIC</button
+            >
+          </nav>
+          <div class="slider__container_slides">
+            <div class="slider__container_slides_item">
+              <img
+                src="./images/Rostov-admiral.png"
+                alt="Rostov admiral"
+              />
+            </div>
+            <div class="slider__container_slides_item">
+              <img src="./images/Sochi.png" alt="Sochi" />
+            </div>
+            <div class="slider__container_slides_item">
+              <img
+                src="./images/Rostov-patriot.png"
+                alt="Rostov patriot"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
